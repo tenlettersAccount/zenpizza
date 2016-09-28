@@ -5444,6 +5444,32 @@ font-family: 'RobotoSlab';
     position: relative;
 }
 
+.zen_slider {
+    margin-top: 10px;
+    position: relative;
+    height: 290px;
+}
+
+.block_1 {
+    background-image: url(https://d2yvv6a7kcdl71.cloudfront.net/57aaa205fb003dc5144303d4/assets/C04AF4EE-1A97-4906-8FE2-87E398988C0E.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+.block_2 {
+    height: 700px;
+    background-image: linear-gradient(to bottom, #F88F6F, #F17470 42%, #E66A6D);
+    margin-top: 0;
+}
+
+.block_2 h2 {
+    color: white;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+
 /* Button 7b */
 .btn-7b {
     overflow: hidden;
@@ -5452,16 +5478,17 @@ font-family: 'RobotoSlab';
 .btn-7b:before {
     position: absolute;
     left: 0;
-    width: 40%;
-    font-size: 160%;
-    line-height: 0.8;
-    color: #0a833d;
+    width: 35%;
+    line-height: 1.5;
+    color: #fff;
 }
-
+.btn.focus, .btn:focus, .btn:hover{
+    color: white;
+}
 .btn-7b.btn-activated:before {
-    -webkit-animation: scaleUp 0.5s;
-    -moz-animation: scaleUp 0.5s;
-    animation: scaleUp 0.5s;
+    -webkit-animation: scaleUp 0.8s;
+    -moz-animation: scaleUp 0.8s;
+    animation: scaleUp 0.8s;
 }
 
 @-webkit-keyframes scaleUp {
