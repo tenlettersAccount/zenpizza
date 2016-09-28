@@ -168,14 +168,14 @@ $(document).ready(function () {
 
 
     $('.img').click(function () {
-        $('.fastorder').removeClass('animated slideOutRight');
+        $('.fastorder').removeClass('animated fadeOutRight');
         $('.nodecor').css({'display': 'none'});
         $('.decor').css({'display': 'none'});
         $('.decor3').css({'display': 'block'});
 
 
         $('.mainfastorder').css('display', 'block');
-        $('.fastorder').addClass('animated slideInRight');
+        $('.fastorder').addClass('animated fadeInRight');
         $('.mainfastorder').fadeIn('fast');
         setTimeout(function () {
             $('.fclose').fadeIn('slow');
@@ -184,14 +184,14 @@ $(document).ready(function () {
     });
     $('.big_zen_card h4').click(function () {
         console.log('hjklhlk');
-        $('.fastorder').removeClass('animated slideOutRight');
+        $('.fastorder').removeClass('animated fadeOutRight');
         $('.nodecor').css({'display': 'none'});
         $('.decor').css({'display': 'none'});
         $('.decor3').css({'display': 'block'});
 
 
         $('.mainfastorder').css('display', 'block');
-        $('.fastorder').addClass('animated slideInRight');
+        $('.fastorder').addClass('animated fadeInRight');
         $('.mainfastorder').fadeIn('fast');
         setTimeout(function () {
             $('.fclose').fadeIn('slow');
@@ -199,8 +199,8 @@ $(document).ready(function () {
     });
 
     $('.fclose, .modalfastorder').click(function () {
-        $('.fastorder').removeClass('animated slideInRight');
-        $('.fastorder').addClass('animated slideOutRight');
+        $('.fastorder').removeClass('animated fadeInRight');
+        $('.fastorder').addClass('animated fadeOutRight');
         $('.decor3').css('display', 'none');
 
 
@@ -230,8 +230,8 @@ $(document).ready(function () {
 
 
     $('.fa-shopping-basket').parents('li').click(function () {
-        $('.zen_popup_nav').removeClass('animated slideInRight');
-        $('.zen_popup_nav').addClass('animated slideOutRight');
+        $('.zen_popup_nav').removeClass('animated fadeInRight');
+        $('.zen_popup_nav').addClass('animated fadeOutRight');
 
         $('.zen_popup_bg').css('display', 'none');
         setTimeout(function () {

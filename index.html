@@ -1587,16 +1587,31 @@
             $(this).addClass('li_active');
         });
 
-        $('.zen_nav_feedback').click(function () {
+        /*$('.zen_nav_feedback').click(function () {
             $('.zen_popup_nav').removeClass('animated fadeOutRight');
             $('.zen_popup_nav').css('display', 'block');
             $('.zen_popup_nav').addClass('animated fadeInRight');
             $('.zen_popup_bg').fadeIn('fast');
-        });
+        });*/
 
         /*Жду звонка*/
 
-        $('.zen_nav_feedback').click(function(){
+        $('.zen_nav_feedback li:first-child').click(function(){
+            $('.zen_popup_nav').addClass('animated fadeOutRight');
+            $('.fastorder').removeClass('animated fadeInRight');
+            $('.fastorder').addClass('animated fadeOutRight');
+            $('.fclose').css('display', 'none');
+            $('.modalfastorder').css('display', 'none');
+            setTimeout(function (){
+                $('.zen_popup_nav').removeClass('animated fadeOutRight');
+                $('.zen_popup_nav').css('display', 'block');
+                $('.zen_popup_nav').addClass('animated fadeInRight');
+                $('.zen_popup_bg').fadeIn('fast');
+            },500);
+        });
+
+        $('.zen_nav_feedback li:last-child').click(function(){
+            $('.zen_popup_nav').addClass('animated fadeOutRight');
             $('.fastorder').removeClass('animated fadeInRight');
             $('.fastorder').addClass('animated fadeOutRight');
             $('.fclose').css('display', 'none');
