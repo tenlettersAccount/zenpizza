@@ -246,8 +246,10 @@ $(document).ready(function () {
             $('.nodecor').css('display', 'block');
             $('.fastorder').addClass('animated fadeInRight');
             $('.mainfastorder').fadeIn('fast');
-            $('.fclose').fadeIn(2000);
         }, 500);
+        setTimeout(function(){
+            $('.fclose').fadeIn(600);
+        }, 1300);
 
     });
 
@@ -381,6 +383,7 @@ $(document).ready(function () {
         });
     });*/
 
+    // анимация при добавлении товара в корзину
     $(document.body).on('click', '.bplus',function(){
         $('.fa-shopping-basket').parents('li').addClass('cbutton--click');
         setTimeout(function(){

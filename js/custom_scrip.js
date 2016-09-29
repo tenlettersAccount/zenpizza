@@ -722,8 +722,7 @@ $(function () {
      ==========================================*/
 
     $(document.body).on('click', '.nplus, .nminus', function () {
-        $(this).siblings('.sumof').fadeOut(90);
-        $(this).siblings('.sumof').fadeIn(200);
+        // do animation here
     });
 
 
