@@ -204,9 +204,7 @@ $(document).ready(function () {
     $('.fclose, .modalfastorder').click(function () {
         $('.fastorder').removeClass('animated fadeInRight');
         $('.fastorder').addClass('animated fadeOutRight');
-        $('.decor3').css('display', 'none');
-
-
+        
         $('.fclose').css('display', 'none');
         setTimeout(function () {
             $('.nodecor').css('display', 'block');
