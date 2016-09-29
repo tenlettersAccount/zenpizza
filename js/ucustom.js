@@ -2,9 +2,12 @@ $(document).ready(function () {
 
     $('.questions li').click(function () {
         $('.acc').slideUp(400);
+        if( $(this).next('.acc').css('display') != 'block'){
+            $(this).next('.acc').slideDown(400);
+        }
         $('.questions li').removeClass('semibold');
         $(this).addClass('semibold');
-        $(this).next('.acc').slideDown(400);
+
     });
 
     $('footer').parents('.zen_content_wrapper').css('overflow', 'hidden');

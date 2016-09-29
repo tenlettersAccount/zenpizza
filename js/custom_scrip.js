@@ -2,7 +2,6 @@ $(document).ready(function(){
     $('.preloaderContainer').fadeOut(500);
 });
 $(function () {
-
     var w = window.innerWidth;
     console.log(w);
 
@@ -281,7 +280,7 @@ $(function () {
      ===========================================*/
 
     $(".kyzyluved p").html('0');
-
+    
     var cart = {
         fillInTheCart: function () {
             // instance of cart html collection
