@@ -1534,6 +1534,7 @@ xmp {
     top: 0;
     bottom: 0;
     left: 0;
+    z-index: 9999;
     display: none;
     padding: 0px;
 }
@@ -5335,7 +5336,9 @@ input[type="submit"] {
 #section05{
     height: 80px;
 }
-
+#section05 a{
+    cursor: pointer;
+}
 
 #section05 a span {
     position: absolute;

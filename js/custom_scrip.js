@@ -1,6 +1,3 @@
-$(document).ready(function(){
-    $('.preloaderContainer').fadeOut(500);
-});
 $(function () {
     var w = window.innerWidth;
     console.log(w);
@@ -86,20 +83,20 @@ $(function () {
     ostroe.click(function () {
         $(this).css({color: '#E73F3E', borderBottom: '3px solid #E73F3E', transition: '0.2s'});
         $(this).find('img').fadeOut(300);
-        $(this).find('img').attr('src', '../../images/fire-active.png');
+        $(this).find('img').attr('src', 'images/fire-active.png');
         $(this).find('img').fadeIn(300);
 
         recomenduemoe.css({color: '#757575', borderBottom: '0px solid #E73F3E', transition: '0.2s'});
-        recomenduemoe.find('img').attr('src', '../../images/star.png');
+        recomenduemoe.find('img').attr('src', 'images/star.png');
     });
     recomenduemoe.click(function () {
         $(this).css({color: '#E73F3E', borderBottom: '3px solid #E73F3E', transition: '0.2s'});
         $(this).find('img').fadeOut(300);
-        $(this).find('img').attr('src', '../../images/star-active.png');
+        $(this).find('img').attr('src', 'images/star-active.png');
         $(this).find('img').fadeIn(300);
 
         ostroe.css({color: '#757575', borderBottom: '0px solid #E73F3E', transition: '0.2s'});
-        ostroe.find('img').attr('src', '../../images/fire.png');
+        ostroe.find('img').attr('src', 'images/fire.png');
     });
 
     /*==============================
