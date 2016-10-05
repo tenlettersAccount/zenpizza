@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    // test
     $('.questions li').click(function () {
         $('.acc').slideUp(400);
         if ($(this).next('.acc').css('display') != 'block') {
